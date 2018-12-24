@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+        }
+
+        .wrapper div {
+            background-color: #eee;
+            padding: 20px;
+        }
+
+        .wrapper .nested-wrapper {
+            display: grid;
+            grid-template-columns: auto auto
+        }
+
+        .item-3 {
+            grid-column-start: 1;
+            grid-column-end: 3
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem voluptatum earum porro quisquam et cum
+            error architecto, dolores repellendus mollitia quam! Dolorum aut, mollitia quas fugiat fuga neque voluptate
+            aliquid!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem voluptatum earum porro quisquam et cum
+            error architecto, dolores repellendus mollitia quam! Dolorum aut, mollitia quas fugiat fuga neque voluptate
+            aliquid!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem voluptatum earum porro quisquam et cum
+            error architecto, dolores repellendus mollitia quam! Dolorum aut, mollitia quas fugiat fuga neque voluptate
+            aliquid!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem voluptatum earum porro quisquam et cum
+            error architecto, dolores repellendus mollitia quam! Dolorum aut, mollitia quas fugiat fuga neque voluptate
+            aliquid!
+        </div>
+        <div>
+            <div class="nested-wrapper">
+                <div>Lorem ipsum dolor sit.</div>
+                <div>Lorem ipsum dolor sit.</div>
+                <div>Lorem ipsum dolor sit.</div>
+                <div>Lorem ipsum dolor sit.</div>
+            </div>
+        </div>
+        <div class="item-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti distinctio deleniti incidunt
+            nesciunt, quae eligendi sit. Ut, sapiente aperiam et quibusdam animi commodi repudiandae ratione doloribus
+            incidunt veritatis cum.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugit quod consectetur, culpa optio voluptatum
+            tempore illo, modi nihil nesciunt commodi nulla iste vitae, ab dolore atque. Nihil, debitis qui.
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem voluptatum earum porro quisquam et cum
+            error architecto, dolores repellendus mollitia quam! Dolorum aut, mollitia quas fugiat fuga neque voluptate
+            aliquid!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis architecto cupiditate illum quos
+            adipisci voluptatem, beatae aperiam? Ducimus dicta nobis iste alias id? Porro molestiae maxime tempore
+            fugit vel eaque!
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti distinctio deleniti incidunt
+            nesciunt, quae eligendi sit. Ut, sapiente aperiam et quibusdam animi commodi repudiandae ratione doloribus
+            incidunt veritatis cum.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugit quod consectetur, culpa optio voluptatum
+            tempore illo, modi nihil nesciunt commodi nulla iste vitae, ab dolore atque. Nihil, debitis qui.
+        </div>
+    </div>
+
+</body>
+
+</html>
